@@ -15,6 +15,7 @@ import PortfolioInsert from './components/PortfolioInsert';
 import PortfolioiDetail from './components/PortfolioiDetail';
 import TodolistDetail from './components/TodolistDetail';
 import Career from './components/Career';
+import PortfolioUpdate from './components/PortfolioUpdate';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
       <div className="App">
         <div className='MenuBar'>
 
+
           <div className="logo_div"><h1>Draw your PORTFOLIO</h1></div>
           <div className="link_div">
             <Link to='/' ><button className='MenuButton'>home</button></Link> &nbsp;
@@ -54,7 +56,6 @@ function App() {
             <Link to='/logout' ><button className='MenuButton'>로그아웃</button></Link> &nbsp;
             <Link to='/portfolio' ><button className='MenuButton'>portfolio</button></Link> &nbsp;
             <Link to='/career' ><button className='MenuButton'>이력</button></Link> &nbsp;
-            <Link to='/todolist'><button className='MenuButton'>todolist</button></Link> &nbsp;
             {/* <hr></hr> */}
           </div>
         </div>
@@ -69,8 +70,10 @@ function App() {
           <Route path='/logout' element={<Logout />} />
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/portfolioInsert' element={<PortfolioInsert />} />
+          <Route path='/portfolioUpdate/:portNo' element={<PortfolioUpdate />} />
           <Route path='/portfolioDetailView/:portNo' element={<PortfolioiDetail />} />
           <Route path='/todolist' element={<TodolistDetail />} />
+
           <Route path='/career' element={<Career />} />
         </Routes>
       </div>
