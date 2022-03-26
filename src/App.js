@@ -15,7 +15,6 @@ import PortfolioInsert from './components/PortfolioInsert';
 import PortfolioiDetail from './components/PortfolioiDetail';
 import TodolistDetail from './components/TodolistDetail';
 import Career from './components/Career';
-import TodolistDetail from './components/TodolistDetail';
 import PortfolioUpdate from './components/PortfolioUpdate';
 
 
@@ -70,10 +69,10 @@ function App() {
           <Route path='/mypage' element={<Mypage />} />
           <Route path='/logout' element={<Logout />} />
           <Route path='/portfolio' element={<Portfolio />} />
-          <Route path='/portfolioInsert' element={<PortfolioInsert/>} />
-          <Route path='/portfolioUpdate/:portNo' element={<PortfolioUpdate/>} />
-          <Route path='/portfolioDetailView/:portNo' element={<PortfolioiDetail/>} />
-          <Route path='/todolist' element={<TodolistDetail />} /> 
+          <Route path='/portfolioInsert' element={<PortfolioInsert />} />
+          <Route path='/portfolioUpdate/:portNo' element={<PortfolioUpdate />} />
+          <Route path='/portfolioDetailView/:portNo' element={<PortfolioiDetail />} />
+          <Route path='/todolist' element={<TodolistDetail />} />
 
           <Route path='/career' element={<Career />} />
         </Routes>
